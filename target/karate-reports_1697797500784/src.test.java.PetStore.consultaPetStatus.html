@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("3441a200-fa85-4f97-a252-bcf65310b9db",{name:"flopecha"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>src.test.java.PetStore.consultaPetStatus</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-10-20 12:24:13 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:2]"><span>[1:2]</span> <span>Consultar lista mascotas vendidas</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/PetStore/consultaPetStatus.feature</span><span class="feature-label">|</span>
+          <span class="feature-name"></span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:2]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:2]</span>
+                <span class="scenario-name">Consultar lista mascotas vendidas</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1277</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref passed">3</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://petstore.swagger.io/v2/pet/findByStatus?status=sold&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">81</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1196</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:24:12.439 request:
+1 &gt; GET https://petstore.swagger.io/v2/pet/findByStatus?status=sold
+1 &gt; Host: petstore.swagger.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_392)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:24:13.132 response time in milliseconds: 690
+1 &lt; 200
+1 &lt; Date: Fri, 20 Oct 2023 10:23:31 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 &lt; Server: Jetty(9.2.9.v20150224)
+[{&quot;id&quot;:269459429,&quot;category&quot;:{&quot;id&quot;:929676497,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:2832664378,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2853401018,&quot;category&quot;:{&quot;id&quot;:2209419410,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:3037688706,&quot;name&quot;:&quot;python-pet-tag&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854749161,&quot;category&quot;:{&quot;id&quot;:-10928166,&quot;name&quot;:&quot;veniam in amet officia&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;Ut dolor nisi&quot;,&quot;consectetur nulla exercitation esse in&quot;],&quot;tags&quot;:[{&quot;id&quot;:46174105,&quot;name&quot;:&quot;ipsum occaecat in cupidatat&quot;},{&quot;id&quot;:-97055673,&quot;name&quot;:&quot;dolor minim reprehenderit aliquip aliqua&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:3275705798,&quot;category&quot;:{&quot;id&quot;:3315273586,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:3666119938,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:112071991555555,&quot;name&quot;:&quot;Sherkhan3&quot;,&quot;photoUrls&quot;:[&quot;./dog.png&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2278751085,&quot;category&quot;:{&quot;id&quot;:1926312608,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:2203511191,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1090182596,&quot;category&quot;:{&quot;id&quot;:101912529,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:3567190145,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:4157746784,&quot;category&quot;:{&quot;id&quot;:4022313151,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:3642247422,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2468289755,&quot;category&quot;:{&quot;id&quot;:4047443516,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:3183560032,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2406443976,&quot;category&quot;:{&quot;id&quot;:2267931090,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1936641730,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1434916634,&quot;category&quot;:{&quot;id&quot;:2893650600,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:2168287226,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:478701916,&quot;category&quot;:{&quot;id&quot;:543265870,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:116160314,&quot;name&quot;:&quot;python-pet-tag&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:17,&quot;name&quot;:&quot;Special_char_owner_!@#$^&amp;()`.testing&quot;,&quot;photoUrls&quot;:[&quot;https://petstore3.swagger.io/resources/photos/623389095.jpg&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:19467,&quot;name&quot;:&quot;見響见响仮仏!$%&amp;()*+,-ƄƅƆḞḟṀʶʷʸăĄą&quot;,&quot;photoUrls&quot;:[&quot;https://petstore3.swagger.io/resources/photos/623389095.jpg&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1212817389,&quot;category&quot;:{&quot;id&quot;:3834388758,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:2938324846,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1314920590,&quot;category&quot;:{&quot;id&quot;:2837656785,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:2814479757,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1852375363,&quot;category&quot;:{&quot;id&quot;:568186406,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:2693061865,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:915402522,&quot;category&quot;:{&quot;id&quot;:2780933930,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:700601226,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2332391281,&quot;category&quot;:{&quot;id&quot;:881090752,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:98367649,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9999,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;cat&quot;},&quot;name&quot;:&quot;Catcat&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854749575,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;cat&quot;},&quot;name&quot;:&quot;test cat&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854749576,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;cat&quot;},&quot;name&quot;:&quot;test cat&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854749636,&quot;category&quot;:{&quot;id&quot;:-29225102,&quot;name&quot;:&quot;Excepteur fugiat ut in&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;officia quis co&quot;,&quot;sit Lore&quot;],&quot;tags&quot;:[{&quot;id&quot;:-9027978,&quot;name&quot;:&quot;enim&quot;},{&quot;id&quot;:-12646892,&quot;name&quot;:&quot;dolor exercitation eu elit&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854749637,&quot;category&quot;:{&quot;id&quot;:-38125463,&quot;name&quot;:&quot;irure officia Excepteur a&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;mollit sint anim Excepteur&quot;,&quot;fugiat non nostrud amet&quot;],&quot;tags&quot;:[{&quot;id&quot;:91190600,&quot;name&quot;:&quot;velit aute&quot;},{&quot;id&quot;:83461469,&quot;name&quot;:&quot;eiusmod sed deserunt proident&quot;}],&quot;status&quot;:&quot;sold&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref failed">5</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5">function(response){
+  for(var i = 0; i&lt;response.length; i++){
+    print(&#39;{ &#39;+ response[i].id + &#39;, &#39; + response[i].name + &#39;}&#39;);
+  }
+}</div>
+
+  
+
+  <div class="preformatted" data-parent="0.5">12:24:13.172 src/test/java/PetStore/consultaPetStatus.feature:5
+Then status 200
+&quot;&quot;&quot;
+function(response){
+  for(var i = 0; i&lt;response.length; i++){
+    print(&#39;{ &#39;+ response[i].id + &#39;, &#39; + response[i].name + &#39;}&#39;);
+  }
+}
+&quot;&quot;&quot;
+no step-definition method match found for: status 200
+src/test/java/PetStore/consultaPetStatus.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
